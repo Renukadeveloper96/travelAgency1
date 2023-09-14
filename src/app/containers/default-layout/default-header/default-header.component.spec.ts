@@ -1,3 +1,4 @@
+import { PagesRoutingModule } from './../../../views/pages/pages-routing.module';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import {
@@ -13,7 +14,6 @@ import { IconSetService } from '@coreui/icons-angular';
 import { iconSubset } from '../../../icons/icon-subset';
 import { DefaultHeaderComponent } from './default-header.component';
 import { RouterTestingModule } from '@angular/router/testing';
-
 describe('DefaultHeaderComponent', () => {
   let component: DefaultHeaderComponent;
   let fixture: ComponentFixture<DefaultHeaderComponent>;
@@ -23,7 +23,7 @@ describe('DefaultHeaderComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [DefaultHeaderComponent],
       imports: [GridModule, HeaderModule, NavModule, BadgeModule, AvatarModule, DropdownModule, BreadcrumbModule, RouterTestingModule, SidebarModule],
-      providers: [IconSetService]
+      providers: [IconSetService,PagesRoutingModule]
     })
       .compileComponents();
   });

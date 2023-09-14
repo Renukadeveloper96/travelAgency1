@@ -2,10 +2,11 @@ import { Component, Input } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 import { ClassToggleService, HeaderComponent } from '@coreui/angular';
-
+import { PagesRoutingModule } from '../../../views/pages/pages-routing.module';
 @Component({
   selector: 'app-default-header',
   templateUrl: './default-header.component.html',
+  styleUrls:['./default-header.component.scss']
 })
 export class DefaultHeaderComponent extends HeaderComponent {
 
