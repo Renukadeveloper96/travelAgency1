@@ -1,0 +1,199 @@
+.limitTextHeight {
+    height: 20px;
+    overflow: hidden;
+  }
+  .container{
+    background-color: white;
+  }
+  button{
+    background-color:rgb(20, 233, 20);
+    border :none;
+    width:10%;
+    margin-left:1%;
+    margin-top:1%;
+    margin-bottom:1%;
+  }
+  .grid{
+    background-color:cadetblue;
+    margin-left:6%;
+  }
+  body{
+    margin:auto
+}
+
+
+
+
+
+
+.tileComponent1 > img{
+    height: 180px;
+    width:100%
+}
+.tileContainer{
+    height: 180px;
+    box-shadow: 0px 3px 15px black;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 4%;
+    
+}
+
+#mainTileContainer{
+    margin-top: 3%;
+}
+.tileComponent2{
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+.tileComponent1 > img{
+    height: 180px;
+    width:80%
+}
+
+.componentHeading{
+    color: #192f60;
+    font-size:25px;
+    font-weight: bold
+}
+
+.componentSubHeading{
+    color: gray;
+    font-size:18px;
+    line-height:1;
+}
+
+.tileContainer:hover{
+   transform: scale(1.1)
+}
+//
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box{
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin: 8px;
+}
+
+.shop1{
+    font-size: 16px;
+}
+
+.box1-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box1-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.shop1 p a{
+      text-decoration: none;
+      color: #007185;
+      font-size: 15px;
+}
+
+footer{
+  margin-top: 15px;
+}
+.firstpanel{
+  height: 50px;
+  background-color: #232F3E;
+  color: white;
+  font: 13px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.secondpanel{
+  background-color: #333;
+  color: white;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul{
+  margin-top: 20px;
+}
+ul a {
+  display: block;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #dddddd;
+}
+
+.thirdpanel{
+  background-color: #333;
+  color: white;
+  border-top: 0.5px solid #848688;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  height: 50px;
+  width: 100%;
+  background-size: cover;
+  width: 100px;
+}
+
+.select-op{
+  margin-left: 55px;
+  display: flex;
+}
+
+.select-op select{
+  background: transparent;
+  color: #cccccc;
+  font-size: 13px;
+  text-decoration: none;
+  margin-left: 5px;
+  border: 1px solid #848688;
+  padding: 6px 18px 6px 8px;
+  border-radius: 3px;
+}
+
+.panel4{
+  background-color: #333;
+  color: white;
+  height: 80px;
+  font-size: 12px;
+  text-align: center;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
+
+.page{
+  text-align: center;
+  padding-top: 25px;
+}
+.page a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.copyright{
+  margin-top: 5px;
+}
+a{
+  color: slategray;
+  text-decoration: none;
+}

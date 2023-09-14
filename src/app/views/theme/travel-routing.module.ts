@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ColorsComponent } from './colors.component';
-import { TypographyComponent } from './typography.component';
+import { TravelPackage } from './travel-package.component';
+import { TopDestinationComponent } from './top-destination.component';
 
 const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Theme',
+      title: 'Travel ',
     },
     children: [
       {
@@ -18,16 +18,16 @@ const routes: Routes = [
       },
       {
         path: 'colors',
-        component: ColorsComponent,
+        component: TravelPackage,
         data: {
-          title: 'Colors',
+          title: 'Travel Package',
         },
       },
       {
         path: 'typography',
-        component: TypographyComponent,
+        component: TopDestinationComponent,
         data: {
-          title: 'Typography',
+          title: 'Top Destination',
         },
       },
     ],
@@ -38,4 +38,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ThemeRoutingModule {}
+export class TravelRoutingModule {}

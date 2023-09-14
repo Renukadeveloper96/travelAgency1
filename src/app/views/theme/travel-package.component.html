@@ -1,0 +1,110 @@
+<!-- <div class="fade-in">
+  <c-card class="mb-4">
+    <c-card-header>
+      Theme colors
+    </c-card-header>
+    <c-card-body>
+      <c-row>
+        <app-theme-color color="primary">
+          <h6>Brand Primary Color</h6>
+        </app-theme-color>
+        <app-theme-color color="secondary">
+          <h6>Brand Secondary Color</h6>
+        </app-theme-color>
+        <app-theme-color color="success">
+          <h6>Brand Success Color</h6>
+        </app-theme-color>
+        <app-theme-color color="danger">
+          <h6>Brand Danger Color</h6>
+        </app-theme-color>
+        <app-theme-color color="warning">
+          <h6>Brand Warning Color</h6>
+        </app-theme-color>
+        <app-theme-color color="info">
+          <h6>Brand Info Color</h6>
+        </app-theme-color>
+        <app-theme-color color="light">
+          <h6>Brand Light Color</h6>
+        </app-theme-color>
+        <app-theme-color color="dark">
+          <h6>Brand Dark Color</h6>
+        </app-theme-color>
+      </c-row>
+    </c-card-body>
+  </c-card>
+</div> -->
+<div class="container">
+  <div class="col-md-12">
+    <div class="row">
+      <h2 [style.color]="'brown'">TOUR  PACKAGES</h2> 
+    </div>
+    <div class="row">
+      <div [ngClass]="{'limitTextHeight': isReadMore}">
+        This is long text replaced with reading more/less link example in Angular
+        application paragraph text shown here continue THis is long text replaced with
+        reading...... link example in Angular application paragraph text shown
+        here continue continue This is long text replaced with reading more/less link
+        example in Angular application paragraph text shown here continue THis is long
+        text replaced with reading more/less link example in Angular application
+        paragraph text shown here continue continue THis is long text replaced with
+        reading more/less link example in Angular application paragraph text shown
+        here continue THis is long text replaced with reading more/less link example
+        in Angular application paragraph text shown here continue continue
+      </div>
+      <button type="button" class="btn btn-success" (click)="showText()" class="ReadMoreLess">{{ isReadMore ? 'Read More': 'Read Less' }}</button>
+    </div>
+      
+              <!---->
+              <div class="shop">
+                <div class="shop1 box">
+                  <div class="box1-content">
+                  <h4>Forts And Palaces Tour Packages</h4>
+                  <div class="box1-img" style="background-image: url({{img1}});"></div>
+                  <p><a href="#">Shop now</a></p>
+                </div>
+                </div>
+                <div class="shop2 box">
+                  <div class="box1-content">
+                    <h4>Mountaineering Tour Packages</h4>
+                    <div class="box1-img" style="background-image: url({{img3}});"></div>                    <p><a href="#">Shop now</a></p>
+                  </div>
+                </div>
+                <div class="shop3 box">
+                  <div class="box1-content">
+                    <h4>Adventure Tour Packages</h4>
+                    <div class="box1-img" style="background-image: url({{img2}});"></div>                    <p><a href="#">Shop now</a></p>
+                  </div>
+                </div>
+                <div class="shop4 box">
+                  <div class="box1-content">
+                    <h4>Forts And Palaces Tour Packages</h4>
+                    <div class="box1-img" style="background-image: url({{img2}});"></div>                    <p><a href="#">Shop now</a></p>
+                  </div>
+                </div>        <div class="shop1 box">
+                  <div class="box1-content">
+                    <h4>Trekking Tour Packages</h4>
+                    <div class="box1-img" style="background-image: url({{img3}});"></div>                    <p><a href="#">Shop now</a></p>
+                  <p><a href="#">Shop now</a></p>
+                </div>
+                </div>
+                <div class="shop2 box">
+                  <div class="box1-content">
+                    <h4>Sightseeing Tour Packages</h4>
+                    <div class="box1-img" style="background-image: url({{img1}});"></div>                    <p><a href="#">Shop now</a></p>
+                  </div>
+                </div>
+                <div class="shop3 box">
+                  <div class="box1-content">
+                    <h4>Forts And Palaces Tour Packages</h4>
+                    <div class="box1-img" style="background-image: url({{img2}});"></div>                    <p><a href="#">Shop now</a></p>
+                  </div>
+                </div>
+                <div class="shop4 box">
+                  <div class="box1-content">
+                    <h2>Shop Laptops & Tablets</h2>
+                    <div class="box1-img" style="background-image: url({{img3}});"></div>                    <p><a href="#">Shop now</a></p>
+                  </div>
+                </div>
+      </div>
+  </div>
+</div>

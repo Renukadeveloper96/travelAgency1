@@ -4,9 +4,10 @@ import { DOCUMENT } from '@angular/common';
 import { getStyle, rgbToHex } from '@coreui/utils';
 
 @Component({
-  templateUrl: 'colors.component.html'
+  templateUrl: 'travel-package.component.html',
+  styleUrls: ['./travel-package.component.scss'],
 })
-export class ColorsComponent implements OnInit, AfterViewInit {
+export class TravelPackage implements OnInit, AfterViewInit {
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -38,7 +39,14 @@ export class ColorsComponent implements OnInit, AfterViewInit {
       }
     );
   }
-
+  isReadMore = true;
+  
+  showText() {
+    this.isReadMore = !this.isReadMore;
+}
+img1:string="assets/images/adventureImg.jpg";
+img2:string="assets/images/fortsImg.jpg"
+img3:string="assets/images/MountainImg.jpg"
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
@@ -53,14 +61,17 @@ export class ColorsComponent implements OnInit, AfterViewInit {
       <div [ngClass]="colorClasses" style="padding-top: 75%;"></div>
       <ng-content></ng-content>
     </c-col>
-  `
+  `,
+  
+ 
 })
 export class ThemeColorComponent implements OnInit {
+  
   @Input() color = '';
   public colorClasses = {
     'theme-color w-75 rounded mb-3': true
   };
-
+  
   @HostBinding('style.display') display = 'contents';
 
   ngOnInit(): void {
@@ -69,5 +80,6 @@ export class ThemeColorComponent implements OnInit {
       [`bg-${this.color}`]: !!this.color
     };
   }
+  
 }
 

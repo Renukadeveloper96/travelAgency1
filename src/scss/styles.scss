@@ -21,3 +21,22 @@ $enable-rtl: true;
 
 // If you want to add something do it here
 @import "custom";
+.spiner {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+ }
+ .ClassA{
+    color:"brown";
+ }
+ a{
+   color: slategray;
+   text-decoration: none;
+ }
